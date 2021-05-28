@@ -1,12 +1,30 @@
-.nexus
-    padding-top: 2em
-    padding-left: 5%
-    padding-bottom: 1em
-    
-// .ja
-//     padding-left: 2em
-    
 @media (max-width: 4200px)
+    .nexus
+        padding-top: 7em
+        display: grid
+        grid-template-columns: 60em 1000px
+        grid-template-areas: "nexus1 pt1" "pt4 pt4" "pt2 pt2" "pt3 pt3" 
+        grid-column-gap: 15px
+        padding-left: 5%
+        padding-bottom: 1em
+
+        .nexus1
+            grid-area: nexus1
+            width: 60em
+            padding-bottom: 100px
+
+
+        .pt1
+            grid-area: pt1  
+            // width: 800px
+        .pt2
+            grid-area: pt2
+
+        .pt3
+            grid-area: pt3  
+        .pt4
+            grid-area: pt4
+            font-size: 20px
 
     .jacoby-grid
         padding-top: 7em
@@ -82,6 +100,37 @@
             transform: translateY(18px)
 
 @media (max-width: 1200px)
+
+    .nexus
+        padding-left: 0%
+        padding-top: 7em
+        display: grid
+        grid-template-columns: 95vw
+        grid-template-areas: "nexus1" "pt1" "pt4" "pt2" "pt3" 
+        grid-gap: 25px
+
+        .nexus1
+            grid-area: nexus1
+            width: 100vw
+
+
+        .pt1
+            grid-area: pt1  
+
+            padding-left: 20px
+        .pt2
+            grid-area: pt2
+            padding-left: 20px
+
+        .pt3
+            grid-area: pt3  
+            padding-left: 20px
+        .pt4
+            grid-area: pt4
+            font-size: 20px
+            padding-left: 20px
+
+
 
     .jacoby-grid
         padding-top: 7em
